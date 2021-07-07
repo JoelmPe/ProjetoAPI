@@ -14,7 +14,6 @@
 	<name>personapi</name>
 	<description>Person API project</description>
 	<properties>
-		<org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
@@ -73,7 +72,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
@@ -86,14 +84,9 @@
 						<path>
 							<groupId>org.mapstruct</groupId>
 							<artifactId>mapstruct-processor</artifactId>
-							<version>${org.mapstruct.version}</version>
+							<version>1.4.2.Final</version>
 						</path>
 					</annotationProcessorPaths>
-					<excludes>
-						<exclude>
-
-						</exclude>
-					</excludes>
 				</configuration>
 			</plugin>
 		</plugins>
